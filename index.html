@@ -16,18 +16,18 @@
   <body>
     <header class="navbar">
       <div class="logo">
-        <img src="posi.png" alt="logo" class="icon" />
+        <img src="p1.jpg" alt="logo" class="icon" />
       </div>
 
-      <div class="nav-right" id="nav-right">
-        <nav class="nav-links">
+      <div class="nav-rights" id="nav-right">
+        <nav class="nav-linkse">
           <a href="#">About us</a>
           <a href="#">Services</a>
           <a href="#">Use Cases</a>
           <a href="#">Pricing</a>
           <a href="#">Blog</a>
         </nav>
-        <button class="quote-btn">Request a quote</button>
+        <button class="quote-btnn">Request a quote</button>
       </div>
 
       <div class="menu-icon" onclick="toggleMenu()">☰</div>
@@ -180,6 +180,88 @@
       </div>
     </div>
 
+
+    <div class="contact-wrapper">
+  <div class="contact-header">
+    <span class="title">Contact Us</span>
+    <p class="subtitle">Connect with Us: Let’s Discuss Your Digital Marketing Needs</p>
+  </div>
+
+  <div class="contact-form-wrapper">
+    <form class="contact-form">
+      <div class="radio-group">
+        <label><input type="radio" name="contact_reason" checked> Say Hi</label>
+        <label><input type="radio" name="contact_reason"> Get a Quote</label>
+      </div>
+
+      <label>
+        <div class="label-text">Name</div>
+        <input type="text" placeholder="Name" required>
+      </label>
+
+      <label>
+        <div class="label-text">Email*</div>
+        <input type="email" placeholder="Email" required>
+      </label>
+
+      <label>
+        <div class="label-text">Message*</div>
+        <textarea placeholder="Message" required></textarea>
+      </label>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="visual-side">
+      <img src="imgform.png.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <!-- Top Row -->
+    <div class="footer-top">
+      <div class="footer-logo">★ Positivus</div>
+
+      <nav class="footer-links">
+        <a href="#">About us</a>
+        <a href="#">Services</a>
+        <a href="#">Use Cases</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Main Content Row -->
+    <div class="footer-content">
+      <div class="footer-contact">
+        <span class="contact-label">Contact us:</span>
+        <p>Email: info@positivus.com</p>
+        <p>Phone: 555-567-8901</p>
+        <p>Address: 1234 Main St<br>Moonstone City, Stardust State 12345</p>
+      </div>
+
+      <form class="subscribe-form">
+        <input type="email" placeholder="Email" required>
+        <button type="submit">Subscribe to news</button>
+      </form>
+    </div>
+
+    <!-- Bottom -->
+    <hr>
+    <div class="footer-bottom">
+      <p>© 2023 Positivus. All Rights Reserved.</p>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
     <script>
       function toggleMenu() {
         const navRight = document.getElementById("nav-right");
