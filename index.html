@@ -181,108 +181,101 @@
     </div>
 
 
-  <div class="contact-wrapper">
-    <div class="contact-header">
-      <span class="title2">Contact Us</span>
-      <p class="subtitle2">Connect with Us: Let’s Discuss Your Digital Marketing Needs</p>
-    </div>
+    <div class="contact-wrapper">
+      <div class="contact-header">
+        <span class="title2">Contact Us</span>
+        <p class="subtitle2">Connect with Us: Let’s Discuss Your Digital Marketing Needs</p>
+      </div>
                     <!-- form  -->
-   <div class="contact-form-wrapper">
-      <form class="contact-form">
-        <div class="radio-group">
-          <label><input type="radio" name="contact_reason" checked> Say Hi</label>
-          <label><input type="radio" name="contact_reason"> Get a Quote</label>
+      <div class="contact-form-wrapper">
+        <form class="contact-form">
+          <div class="radio-group">
+           <label><input type="radio" name="contact_reason" checked> Say Hi</label>
+           <label><input type="radio" name="contact_reason"> Get a Quote</label>
+          </div>
+
+          <label>
+            <div class="label-text">Name</div>
+            <input type="text" placeholder="Name" required>
+          </label>
+
+          <label>
+            <div class="label-text">Email*</div>
+            <input type="email" placeholder="Email" required>
+          </label>
+
+          <label>
+            <div class="label-text">Message*</div>
+            <textarea placeholder="Message" required></textarea>
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="visual-side">
+          <img src="img.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-inner">
+            <!-- Top Row -->
+        <div class="footer-top">
+          <div class="footer-logo">★ Positivus</div>
+          <nav class="footer-links">
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Use Cases</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+          </nav>
+
+          <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+     <!-- Main Content Row -->
+      <div class="footer-content">
+        <div class="footer-contact">
+          <span class="contact-label">Contact us:</span>
+          <p>Email: info@positivus.com</p>
+          <p>Phone: 555-567-8901</p>
+          <p>Address: 1234 Main St<br>Moonstone City, Stardust State 12345</p>
         </div>
 
-        <label>
-          <div class="label-text">Name</div>
-          <input type="text" placeholder="Name" required>
-        </label>
-
-        <label>
-          <div class="label-text">Email*</div>
+        <form class="subscribe-form">
           <input type="email" placeholder="Email" required>
-        </label>
-
-        <label>
-          <div class="label-text">Message*</div>
-          <textarea placeholder="Message" required></textarea>
-        </label>
-
-        <button type="submit">Send Message</button>
-    </form>
-
-    <div class="visual-side">
-      <img src="img.png" alt="">
-    </div>
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <!-- Top Row -->
-    <div class="footer-top">
-      <div class="footer-logo">★ Positivus</div>
-
-      <nav class="footer-links">
-        <a href="#">About us</a>
-        <a href="#">Services</a>
-        <a href="#">Use Cases</a>
-        <a href="#">Pricing</a>
-        <a href="#">Blog</a>
-      </nav>
-
-      <div class="footer-social">
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-
-    <!-- Main Content Row -->
-    <div class="footer-content">
-      <div class="footer-contact">
-        <span class="contact-label">Contact us:</span>
-        <p>Email: info@positivus.com</p>
-        <p>Phone: 555-567-8901</p>
-        <p>Address: 1234 Main St<br>Moonstone City, Stardust State 12345</p>
+          <button type="submit">Subscribe to news</button>
+        </form>
       </div>
 
-      <form class="subscribe-form">
-        <input type="email" placeholder="Email" required>
-        <button type="submit">Subscribe to news</button>
-      </form>
-    </div>
-
-    <!-- Bottom -->
-    <hr>
-    <div class="footer-bottom">
-      <p>© 2023 Positivus. All Rights Reserved.</p>
-      <a href="#">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
+     <!-- Bottom -->
+      <hr>
+      <div class="footer-bottom">
+        <p>© 2023 Positivus. All Rights Reserved.</p>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </footer>
 
 
 
 
-
-
-
-
-
-
-<script>
-       function toggleMenu() {
-        const navRight = document.getElementById("nav-right");
-        navRight.classList.toggle("active");
+    
+    <script>
+      function toggleMenu() {
+       const navRight = document.getElementById("header-right");
+       navRight.classList.toggle("active");
       }
-       function toggleStep(headerEl) {
-        const step = headerEl.parentElement;
-        const content = step.querySelector(".step-content");
-        const toggle = headerEl.querySelector(".toggle");
+     function toggleStep(headerEl) {
+       const step = headerEl.parentElement;
+       const content = step.querySelector(".step-content");
+       const toggle = headerEl.querySelector(".toggle");
 
-        const isActive = step.classList.contains("active");
+       const isActive = step.classList.contains("active");
         if (isActive) {
           content.style.display = "none";
           toggle.textContent = "+";
@@ -293,6 +286,6 @@
           step.classList.add("active");
         }
       }
-     </script>
+   </script>
   </body>
 </html>
