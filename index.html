@@ -14,13 +14,14 @@
     />
   </head>
   <body>
-    <header class="navbar">
+    <header class="header">
       <div class="logo">
         <img src="p1.jpg" alt="logo" class="icon" />
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
       </div>
 
-      <div class="nav-rights" id="nav-right">
-        <nav class="nav-linkse">
+      <div class="header-right" id="header-right">
+        <nav class="header-linkes">
           <a href="#">About us</a>
           <a href="#">Services</a>
           <a href="#">Use Cases</a>
@@ -29,12 +30,10 @@
         </nav>
         <button class="quote-btnn">Request a quote</button>
       </div>
-
-      <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
+    <div class="section2">
+      <div class="section2-content">
         <h1>Navigating the<br />digital landscape<br />for success</h1>
         <p>
           Our digital marketing agency helps businesses<br />
@@ -42,22 +41,23 @@
           services including SEO, PPC, social media marketing,<br />
           and content creation.
         </p>
-        <button class="hero-btn">Book a consultation</button>
+        <button class="section2-btn">Book a consultation</button>
       </div>
-      <div class="hero-image">
+      <div class="section2-image">
         <img src="Illustration.jpg" alt="Digital Marketing Graphic" />
       </div>
-    </section>
-    <marquee behavior="" direction="">
+    </div>
+
+    <div class="company-images">
       <img src="Company logo.png" alt="" /> &nbsp
       <img src="Company logo (1).png" alt="" />
       <img src="Company logo (2).png" alt="" />
       <img src="Company logo (3).png" alt="" />
       <img src="Company logo (4).png" alt="" />
       <img src="Company logo (5).png" alt="" />
-    </marquee>
+    </div>
 
-    <section class="services">
+    <div class="services">
       <h2><span class="highlight">Services</span></h2>
       <p>
         At our digital marketing agency, we offer a range of services to help
@@ -68,7 +68,7 @@
         <!-- Card 1 -->
         <div class="card">
           <div class="card-title">
-            <div class="titile-lift">Search engine optimization</div>
+            <div class="titile-lift">Search engine <br>optimization</div>
             <div class="title-right">
               <a href="#" class="learn-more"
                 ><i class="fas fa-arrow-right"></i> Learn more</a
@@ -94,13 +94,13 @@
           <img src="imgcard (2).png.png" alt="SEO Illustration" /><br />
         </div>
       </div>
-    </section>
+    </div>
 
     <div class="process-container">
       <div class="header">
-        <span class="title">Our Working Process</span>
+        <div class="title">Our Working Process</div>
         <div class="subtitle">
-          Step-by-Step Guide to Achieving<br />Your Business Goals
+          Step-by-Step Guide to Achieving Your Business Goals
         </div>
       </div>
 
@@ -183,10 +183,10 @@
 
     <div class="contact-wrapper">
   <div class="contact-header">
-    <span class="title">Contact Us</span>
-    <p class="subtitle">Connect with Us: Let’s Discuss Your Digital Marketing Needs</p>
+      <span class="title2">Contact Us</span>
+      <p class="subtitle2">Connect with Us: Let’s Discuss Your Digital Marketing Needs</p>
   </div>
-
+                    <!-- form  -->
   <div class="contact-form-wrapper">
     <form class="contact-form">
       <div class="radio-group">
@@ -213,7 +213,7 @@
     </form>
 
     <div class="visual-side">
-      <img src="imgform.png.jpg" alt="">
+      <img src="img.png" alt="">
     </div>
   </div>
 </div>
@@ -262,12 +262,21 @@
     </div>
   </div>
 </footer>
+
+
+
+
+
+
+
+
+
+
     <script>
       function toggleMenu() {
         const navRight = document.getElementById("nav-right");
         navRight.classList.toggle("active");
       }
-
       function toggleStep(headerEl) {
         const step = headerEl.parentElement;
         const content = step.querySelector(".step-content");
